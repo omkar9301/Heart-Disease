@@ -1,0 +1,92 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block body %}
+	<!-- register -->
+
+<center>
+
+	<section class="logins py-5">
+		<div class="container py-xl-5 py-lg-3">
+			<div class="title-section mb-md-5 mb-4">
+				<h6 class="w3ls-title-sub"></h6>
+				<br><br>
+				<h3 class="w3ls-title text-uppercase text-dark font-weight-bold">Add Heart Detail</h3>
+			</div><hr/>
+			<div class="login px-sm-12" style="width:100%">
+				<form action="" method="post" enctype="multipart/form-data">
+					{% csrf_token %}
+					<div class="form-group row">
+						<div class="col-md-2">
+						<label>Age (eg. 1-100)</label>
+						<input type="text" class="form-control" name="age"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>Sex (eg. 0-1)</label>
+						<input type="text" class="form-control" name="sex"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>Blood Pressure (eg. 50-200)</label>
+						<input type="text" class="form-control" name="bp"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>Pulset (eg. 1-200)</label>
+						<input type="text" class="form-control" name="pulset"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>Height</label>
+						<input type="text" class="form-control" name="height"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>Weight</label>
+						<input type="text" class="form-control" name="weight"  required="">
+						</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-md-2">
+						<label>BMI</label>
+						<input type="text" class="form-control" name="bmi"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>SPO2 (eg. 0-1)</label>
+						<input type="text" class="form-control" name="spo2"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>Temperature</label>
+						<input type="text" class="form-control" name="temp"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>Resperation Rate (eg. 10-60)</label>
+						<input type="text" class="form-control" name="resprate"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>White Blood Cells</label>
+						<input type="text" class="form-control" name="wbc"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>Platelets</label>
+						<input type="text" class="form-control" name="plat"  required="">
+						</div>
+				</div>
+				<div class="form-group row">
+					<div class="col-md-2">
+						<label>HB</label>
+						<input type="text" class="form-control" name="hb"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>HBa1c</label>
+						<input type="text" class="form-control" name="hba1c"  required="">
+						</div>
+					<div class="col-md-2">
+						<label>Cholestrol</label>
+						<input type="text" class="form-control" name="cho"  required="">
+						</div>
+				</div>
+
+					<button type="submit" class="btn submit mt-4" style="background-color: #726f6e;">Send Heart data</button>
+				</form>
+			</div>
+		</div>
+	</section>
+	<!-- //register -->
+</center>
+{% endblock %}
